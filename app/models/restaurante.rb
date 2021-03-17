@@ -1,5 +1,4 @@
 class Restaurante < ApplicationRecord
-    scope :massas, where(especialidade: 'massas')
     validates_presence_of :nome, message: "deve ser preenchido"
     validates_presence_of :endereco, message: "deve ser preenchido"
     validates_presence_of :especialidade, message: "deve ser preenchido"
